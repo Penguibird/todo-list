@@ -1,0 +1,9 @@
+@import 'global.scss';
+
+.colored-radio {
+    $size: 20px;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 1px $gray-border solid;
+}

@@ -1,0 +1,60 @@
+@import "bootstrap";
+@import "./global.scss";
+
+.todo-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    width: 90%;
+    max-width: 900px;
+    align-self: center;
+    h2 {
+    }
+}
+
+.button-delete-completed {
+    @extend .btn;
+}
+
+.undo-deleted {
+    @media screen and (min-width: "769px") {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 10px;
+    }
+    @media screen and (max-width: "768px") {
+        position: fixed;
+        bottom: 0px;
+        z-index: 5;
+        width: 100%;
+        // text-align: center;
+    }
+    padding: 1em;
+    box-shadow: $gray-shadow;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    p {
+        color: white;
+        width: fit-content;
+        margin-bottom: 0;
+    }
+    button {
+        font-weight: 900;
+        color: white;
+    }
+}

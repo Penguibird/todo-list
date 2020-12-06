@@ -1,0 +1,47 @@
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;   
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+$off-white: #e1e1e1;
+$lightgray-background: #e1e1e1;
+$lightgray-border: #8c8c8c;
+$gray-border: #6a6a6a;
+$gray-text: $gray-border;
+$dark-gray-text: #555555;
+$gray-shadow-color: #9494948c;
+$gray-shadow: 4px 5px 9px 2px $gray-shadow-color;
+
+body {
+    background-color: $lightgray-background;
+    color: $gray-text;
+    font-family: "Roboto", sans-serif !important;
+}
+
+p {
+    font-weight: 500;
+    .bold {
+        font-weight: 700;
+    }
+    .boldbold {
+        font-weight: 900;
+    }
+}
